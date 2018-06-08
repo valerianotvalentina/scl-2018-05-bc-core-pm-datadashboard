@@ -32,7 +32,7 @@ describe('data', () => {
         assert.isNumber(user.stats.percent);
         assert.isObject(user.stats.exercises);
         assert.isObject(user.stats.quizzes);
-        assert.isObject(user.stats.reads);
+        https://trello.com/b/GhQl9vS4/data-dashboard    assert.isObject(user.stats.reads);
       });
     });
 
