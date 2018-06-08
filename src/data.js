@@ -12,7 +12,7 @@ capitales.Getcohorts(){
 }
 ciudad[i] cohort.list
 
-//busqueda por ciudad
+//busqueda por ciudad//
 //busqueda por alumna (horario y generacion)
 
 //buscas utilizar map y filter
