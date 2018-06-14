@@ -1,0 +1,8 @@
+#title {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.item {
+    border: 1px #999;
+}
