@@ -12,8 +12,18 @@ describe('data', () => {
         assert.isFunction(filterUsers);
     });
 
+<<<<<<< HEAD
     it('debería exponer función processCohortData en objeto global', () => {
         assert.isFunction(processCohortData);
+=======
+      processed.forEach(user => {
+        assert.ok(user.hasOwnProperty('stats'));
+        assert.isNumber(user.stats.percent);
+        assert.isObject(user.stats.exercises);
+        assert.isObject(user.stats.quizzes);
+        https://trello.com/b/GhQl9vS4/data-dashboard    assert.isObject(user.stats.reads);
+      });
+>>>>>>> 18d59acdda5819ec303b24c66d5331c389a425e5
     });
 
     describe('computeUsersStats(users, progress, courses)', () => {
