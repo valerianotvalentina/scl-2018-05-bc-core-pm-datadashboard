@@ -1,4 +1,5 @@
 .topnav {
+    font-family: 'Open Sans', sans-serif;
     background-color: #FFE521;
     position: fixed;
     top: 0;
@@ -6,24 +7,20 @@
     height: 80px;
     overflow: hidden;
     z-index: 100;
-    /* este es el orden de capas */
+    /* z-index es el orden de capas */
 }
 
-.menuSuperior,
-menuSuperior a {
+.menuSuperior {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     overflow: hidden;
     color: #333333;
-    padding: 28px 16px;
+    padding: 28px 40px;
     font-size: 15px;
-    margin-left: 90px;
 }
 
-
-/* .menuSuperior a:hover {}
-
-.menuSuperior a.active {} */
-
 .sidenav {
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     width: 0;
     position: fixed;
@@ -52,28 +49,37 @@ menuSuperior a {
     top: 30px;
 }
 
-.sidenav a {
+.sidenav .sidenavText {
+    font-family: 'Open Sans', sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 17px;
     color: #333333;
     display: block;
     transition: 0.3s;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav .sidenavText:hover {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 229, 33);
+    background-color: rgb(255, 229, 33, 0.2);
+    color: #333333;
 }
 
 .sidenav .closebtn {
+    color: #333333;
+    text-decoration: none;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    display: block;
+    transition: 0.3s;
 }
 
 #main {
+    font-family: 'Open Sans', sans-serif;
     padding: 16px;
     background-color: white;
     width: 277px;
@@ -95,6 +101,7 @@ menuSuperior a {
 }
 
 .cajasSedes {
+    font-family: 'Open Sans', sans-serif;
     margin: 100px 15px;
     width: 250px;
     height: 220px;
@@ -106,12 +113,17 @@ menuSuperior a {
 }
 
 .buttonSedes {
+    font-family: 'Open Sans', sans-serif;
     width: 118px;
     height: 36px;
     background-color: #FF009E;
     color: white;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
     border-radius: 2px;
+}
+
+.buttonSedes:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
 }
 
 table,
