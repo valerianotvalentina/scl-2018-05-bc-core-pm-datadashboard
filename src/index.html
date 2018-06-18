@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CDN-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -17,8 +18,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #F2F2F2;">
     <!-- Menú sidenav push -->
+    <div class="topnav">
+        <div id="main">
+            <span onclick="openNav()">
+                <svg class="elipse"></svg>
+                <i class="fa fa-bars" style="font-size:20px;"></i>
+            </span>
+            <img src="img/LogoLaboratoria.png" width="182px" style="margin-left:60px; margin-top:10px">
+
+        </div>
+        <div id="topMenu" class="menuSuperior">
+            <a class="active">Data Dashboard</a>
+            <a href="#sedes">Sedes</a>
+            <a href="#cohorts">Cohorts</a>
+            <a>Iconos</a>
+            <a>Nombre Apellido</a>
+        </div>
+    </div>
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Item 1</a>
@@ -26,29 +45,71 @@
         <a href="#">Configuración</a>
     </div>
 
-    <div id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
-
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "277px";
-            document.getElementById("main").style.marginLeft = "277px";
+            document.getElementById("contenido").style.marginLeft = "277px";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("contenido").style.marginLeft = "0";
         }
     </script>
+
     <!-- Columnas con bootstrap -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-            <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
-            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div id="contenido">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                        <table>
+                            <tr>
+                                <td><img src="img/chile.png" width="89px"></td>
+                            </tr>
+                            <tr>
+                                <td>Santiago de Chile</td>
+                            </tr>
+                            <tr>
+                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                        <table>
+                            <tr>
+                                <td><img src="img/mexico.png" width="74px"></td>
+                            </tr>
+                            <tr>
+                                <td>Ciudad de México</td>
+                            </tr>
+                            <tr>
+                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                        <table>
+                            <tr>
+                                <td><img src="img/peru.png" width="43px"></td>
+                            </tr>
+                            <tr>
+                                <td>Lima Perú</td>
+                            </tr>
+                            <tr>
+                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <!-- Link a JS -->
     <script type="text/javascript" src="main.js"></script>
 </body>
