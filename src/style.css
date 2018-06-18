@@ -1,0 +1,134 @@
+.topnav {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFE521;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    z-index: 100;
+    /* z-index es el orden de capas */
+}
+
+.menuSuperior {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    color: #333333;
+    padding: 28px 40px;
+    font-size: 15px;
+}
+
+.sidenav {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.elipse {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    left: 15px;
+    top: 17px;
+    background: #E0E0E0;
+}
+
+.fa-bars {
+    position: absolute;
+    left: 29px;
+    top: 30px;
+}
+
+.sidenav .sidenavText {
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #333333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sidenavText:hover {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 229, 33);
+    background-color: rgb(255, 229, 33, 0.2);
+    color: #333333;
+}
+
+.sidenav .closebtn {
+    color: #333333;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: block;
+    transition: 0.3s;
+}
+
+#main {
+    font-family: 'Open Sans', sans-serif;
+    padding: 16px;
+    background-color: white;
+    width: 277px;
+    height: 80px;
+    float: left;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 15px;
+    }
+}
+
+#contenido {
+    margin-top: 80px;
+}
+
+.cajasSedes {
+    font-family: 'Open Sans', sans-serif;
+    margin: 100px 15px;
+    width: 250px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 8px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSedes {
+    font-family: 'Open Sans', sans-serif;
+    width: 118px;
+    height: 36px;
+    background-color: #FF009E;
+    color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.buttonSedes:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+table,
+td {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
