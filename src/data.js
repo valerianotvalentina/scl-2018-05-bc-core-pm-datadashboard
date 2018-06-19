@@ -1,18 +1,14 @@
+function data() {
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET","http://127.0.0.1:8887/data/cohorts/lim-2018-03-pre-core-pw/users.json", false);
+xhttp.send();
+var jsonobj = JSON.parse(xhttp.responseText);
+console.log(jsonobj);
+return jsonobj;
 
-var ciudades =
-{ciudad:santigo de chile;
-{ciudad:lima;
-{ciudad:ciudad de mexico;
-// aqui van los datos y cohors//
 
-// funcion para obtener cohorts
-capitales.Getcohorts(){
-    for (var i = i < ciudades.lenght i++)//iteracion de info
-    ciudades [i] cohorts.lenght
-}
-ciudad[i] cohort.list
+};
 
-//busqueda por ciudad
-//busqueda por alumna (horario y generacion)
 
-//buscas utilizar map y filter
+
+
