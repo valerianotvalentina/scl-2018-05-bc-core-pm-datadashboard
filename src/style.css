@@ -97,7 +97,7 @@
 }
 
 #contenido {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .cajasSedes {
@@ -131,4 +131,26 @@ td {
     padding: 10px;
     align-items: center;
     text-align: center;
+}
+
+.titulosSecciones {
+    font-size: 25px;
+    color: #333333;
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 70px;
+}
+
+.fa-map-marker {
+    padding-right: 15px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
