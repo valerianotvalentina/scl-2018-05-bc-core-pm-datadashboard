@@ -48,15 +48,15 @@ En base a esto, definimos el siguiente sketch:
 
 ### Prototipo de alta fidelidad: General
 
-![Prototipo de alta fidelidad]()
+![Prototipo de alta fidelidad](https://github.com/valerianotvalentina/scl-2018-05-bc-core-pm-datadashboard/blob/master/Imagenes/Figma_DDGeneral.png?raw=true)
 
 ### Prototipo de alta fidelidad: Alumnas
 
-![Prototipo de alta fidelidad]()
+![Prototipo de alta fidelidad](https://github.com/valerianotvalentina/scl-2018-05-bc-core-pm-datadashboard/blob/master/Imagenes/Figma_DDAlumna.png?raw=true)
 
 ### Prototipo de alta fidelidad: Movil
 
-![Prototipo de alta fidelidad]()
+![Prototipo de alta fidelidad](https://github.com/valerianotvalentina/scl-2018-05-bc-core-pm-datadashboard/blob/master/Imagenes/Figma_DDMovil.png?raw=true)
 
 
 ## Trello:

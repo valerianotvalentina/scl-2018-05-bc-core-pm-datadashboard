@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function cargar() {
     Promise.all([
         fetch("../data/cohorts/lim-2018-03-pre-core-pw/users.json"),
@@ -102,8 +101,8 @@ function computeUsersStats(users, progress, cohorts) {
 
 
 
+
         console.log(usuario.stats.exercises.total);
 
 }
-=======
->>>>>>> upstream/master
+
