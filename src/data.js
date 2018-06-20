@@ -1,7 +1,7 @@
-function pressbutton() {
+function cargar() {
     Promise.all([
-        fetch("../data/lim-2018-03-pre-core-pw/users.json"),
-        fetch("../data/lim-2018-03-pre-core-pw/progress.json"),
+        fetch("../data/cohorts/lim-2018-03-pre-core-pw/users.json"),
+        fetch("../data/cohorts/lim-2018-03-pre-core-pw/progress.json"),
         fetch("../data/cohorts.json")
     ]).then(
         (DatosJsons) => {
