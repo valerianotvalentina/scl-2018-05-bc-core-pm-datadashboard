@@ -31,22 +31,22 @@ function cargar() {
                             scoresum = scoresum + elemento.score;
                             scorecom++;
                         }
- 
+
                         if (elemento.completed == 1)
                             quizCompleted++;
                     }
                 }
             }
             let scoreavg = scoresum / scorecom;
- 
- 
- 
+
+
+
             console.log("completado: " + quizCompleted + " - Total: " + quizTotal + " - Promedio: " + scoreavg);
- 
+
         }
     )
 }
- 
+
 function computeUsersStats(users, progress, cohorts) {
     var usuario = {};
     var usuarios = [];
@@ -91,16 +91,18 @@ function computeUsersStats(users, progress, cohorts) {
                 scoresum = scoresum + element.score;
                 if (element.completed == 1)
                     complequizz++;
- 
+
             }
- 
+
         }
     }
     usuario.stats.quizzes.total = totalquizz;
     usuario.stats.quizzes.completed =
- 
- 
- 
+
+
+
+
         console.log(usuario.stats.exercises.total);
- 
+
 }
+
