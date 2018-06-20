@@ -96,8 +96,31 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    #cajaChile,
+    #cajaMexico,
+    #cajaPeru {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+
 #contenido {
     margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+#contenidoTres {
+    margin-top: 80px;
+}
+
+.tablaAlumnas {
+    margin-top: 80px;
+}
+
+.dropdown {
+    margin-top: 80px;
 }
 
 .cajasSedes {
@@ -137,20 +160,58 @@ td {
     font-size: 25px;
     color: #333333;
     position: absolute;
-    margin-top: 20px;
-    padding-left: 70px;
 }
 
-.fa-map-marker {
+.fa-map-marker,
+.fa-users,
+.fa-user {
     padding-right: 15px;
 }
 
-hr {
+
+/* dropdown */
+
+.dropbtn {
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 8px 8px rgba(0, 0, 0, 0.12);
+    color: #333333;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown,
+.dropdown:hover .dropbtn {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    width: 250px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 8px 8px rgba(0, 0, 0, 0.12);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+}
+
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, #FF009E 0%, #56F89A 100%);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
