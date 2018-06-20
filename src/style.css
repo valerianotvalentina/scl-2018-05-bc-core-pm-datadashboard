@@ -97,7 +97,11 @@
 }
 
 #contenido {
+<<<<<<< HEAD
     margin-top: 100px;
+=======
+    margin-top: 80px;
+>>>>>>> 6a3f262762225d420c41e14c4b777909db55dc0b
 }
 
 .cajasSedes {
@@ -131,6 +135,7 @@ td {
     padding: 10px;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
 }
 
 .titulosSecciones {
@@ -153,4 +158,6 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+=======
+>>>>>>> 6a3f262762225d420c41e14c4b777909db55dc0b
 }
