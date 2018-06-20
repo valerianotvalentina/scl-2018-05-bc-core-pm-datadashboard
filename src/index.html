@@ -18,29 +18,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
-     <!-- Menú sidenav push -->
-    <div class="topnav">
-        <div id="main">
-            <span onclick="openNav()">
+        <!-- Menú sidenav push -->
+        <div class="topnav">
+            <div id="main">
+                <span onclick="openNav()">
                 <svg class="elipse"></svg>
                 <i class="fa fa-bars"></i>
             </span>
-            <img id = "LogoLaboratoria" src="img/LogoLaboratoria.png" width="182px">
+                <img id="LogoLaboratoria" src="img/LogoLaboratoria.png" width="182px">
+            </div>
+            <div id="topMenu" class="menuSuperior">
+                <a>Data Dashboard</a>
+            </div>
         </div>
-        <div id="topMenu" class="menuSuperior">
-            <a>Data Dashboard</a>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="sidenavText" href="#">Nombre Usuario</a>
+            <a class="sidenavText" href="#">Data Dashboard</a>
+            <a class="sidenavText" href="#">Configuración</a>
         </div>
-    </div>
- 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="sidenavText" href="#">Nombre Usuario</a>
-        <a class="sidenavText" href="#">Data Dashboard</a>
-        <a class="sidenavText" href="#">Configuración</a>
-    </div>
- 
+
     </header>
     <section>
         <div id="contenido">
@@ -195,4 +196,5 @@
     <script src="indexnav.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
