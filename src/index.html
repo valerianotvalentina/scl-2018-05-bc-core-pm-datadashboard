@@ -43,24 +43,12 @@
         <a class="sidenavText" href="#">Configuración</a>
     </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "277px";
-            document.getElementById("contenido").style.marginLeft = "277px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("contenido").style.marginLeft = "0";
-        }
-    </script>
-
     <!-- Columnas con bootstrap -->
 
     <div id="contenido">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-4 d-flex align-self-left">
                     <div class="titulosSecciones">
                         <i class="fa fa-map-marker" style="font-size:25px;"></i>Sedes
                     </div>
@@ -70,7 +58,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                    <div id="cajaChile" class="cajasSedes mx-auto d-flex align-self-center">
                         <table>
                             <tr>
                                 <td><img src="img/chile.png" width="89px"></td>
@@ -85,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                    <div id="cajaMexico" class="cajasSedes mx-auto d-flex align-self-center">
                         <table>
                             <tr>
                                 <td><img src="img/mexico.png" width="74px"></td>
@@ -100,7 +88,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="cajasSedes mx-auto d-flex align-self-center">
+                    <div id="cajaPeru" class="cajasSedes mx-auto d-flex align-self-center">
                         <table>
                             <tr>
                                 <td><img src="img/peru2.png" width="43px"></td>
@@ -118,7 +106,86 @@
         </div>
     </div>
 
+    <div id="contenidoDos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 d-flex align-self-left">
+                    <div class="titulosSecciones">
+                        <i class="fa fa-users" style="font-size:25px;"></i>Cohorts
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="cohorts" class="dropdownCohorts">
+                        <div class="dropdown">
+                            <button class="dropbtn">Selecciona un cohort</button>
+                            <div class="dropdown-content">
+                                <a>Cohort 1</a>
+                                <a>Cohort 2</a>
+                                <a>Cohort 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contenidoTres">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 d-flex align-self-left">
+                    <div class="titulosSecciones">
+                        <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
+                        <table class="tablaAlumnas">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Link a JS -->
+    <script src="indexnav.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
