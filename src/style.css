@@ -1,9 +1,10 @@
-body{
+body {
     background-color: #F2F2F2;
 }
-#LogoLaboratoria{
-    margin-left:60px; 
-    margin-top:10px
+
+#LogoLaboratoria {
+    margin-left: 60px;
+    margin-top: 10px
 }
 
 .topnav {
@@ -53,7 +54,7 @@ body{
 
 .fa-bars {
     position: absolute;
-    left: 29px;
+    left: 30px;
     top: 30px;
 }
 
@@ -174,7 +175,7 @@ td {
 .fa-users,
 .fa-user {
     padding-right: 15px;
-    font-size:25px;
+    font-size: 25px;
 }
 
 
