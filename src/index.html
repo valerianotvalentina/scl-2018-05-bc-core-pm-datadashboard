@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lan="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Data Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <!-- Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header>
+     <!-- Menú sidenav push -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
@@ -21,14 +37,17 @@
 </head>
 
 <body style="background-color: #F2F2F2;">
+  
     <!-- Menú sidenav push -->
     <div class="topnav">
         <div id="main">
             <span onclick="openNav()">
                 <svg class="elipse"></svg>
-                <i class="fa fa-bars" style="font-size:20px;"></i>
+
+                <i class="fa fa-bars"></i>
             </span>
-            <img src="img/LogoLaboratoria.png" width="182px" style="margin-left:60px; margin-top:10px">
+            <img id = "LogoLaboratoria" src="img/LogoLaboratoria.png" width="182px">
+
 
         </div>
         <div id="topMenu" class="menuSuperior">
@@ -43,150 +62,160 @@
         <a class="sidenavText" href="#">Configuración</a>
     </div>
 
-    <!-- Columnas con bootstrap -->
+    </header>
+    <section>
+        <div id="contenido">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 d-flex align-self-left">
+                        <div class="titulosSecciones">
+                            <i class="fa fa-map-marker"></i>Sedes
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="cajaChile" class="cajasSedes mx-auto d-flex align-self-center">
+                            <table>
+                                <tr>
+                                    <td><img src="img/chile.png" width="89px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Santiago de Chile</td>
+                                </tr>
+                                <tr>
+                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="cajaMexico" class="cajasSedes mx-auto d-flex align-self-center">
+                            <table>
+                                <tr>
+                                    <td><img src="img/mexico.png" width="74px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Ciudad de México</td>
+                                </tr>
+                                <tr>
+                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="cajaPeru" class="cajasSedes mx-auto d-flex align-self-center">
+                            <table>
+                                <tr>
+                                    <td><img src="img/peru2.png" width="43px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Lima Perú</td>
+                                </tr>
+                                <tr>
+                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div id="contenido">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 d-flex align-self-left">
-                    <div class="titulosSecciones">
-                        <i class="fa fa-map-marker" style="font-size:25px;"></i>Sedes
+        <div id="contenidoDos">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 d-flex align-self-left">
+                        <div class="titulosSecciones">
+                            <i class="fa fa-users"></i>Cohorts
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div id="cajaChile" class="cajasSedes mx-auto d-flex align-self-center">
-                        <table>
-                            <tr>
-                                <td><img src="img/chile.png" width="89px"></td>
-                            </tr>
-                            <tr>
-                                <td>Santiago de Chile</td>
-                            </tr>
-                            <tr>
-                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div id="cajaMexico" class="cajasSedes mx-auto d-flex align-self-center">
-                        <table>
-                            <tr>
-                                <td><img src="img/mexico.png" width="74px"></td>
-                            </tr>
-                            <tr>
-                                <td>Ciudad de México</td>
-                            </tr>
-                            <tr>
-                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div id="cajaPeru" class="cajasSedes mx-auto d-flex align-self-center">
-                        <table>
-                            <tr>
-                                <td><img src="img/peru2.png" width="43px"></td>
-                            </tr>
-                            <tr>
-                                <td>Lima Perú</td>
-                            </tr>
-                            <tr>
-                                <td><button class="buttonSedes" type="button">Ingresar</button></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contenidoDos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 d-flex align-self-left">
-                    <div class="titulosSecciones">
-                        <i class="fa fa-users" style="font-size:25px;"></i>Cohorts
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div id="cohorts" class="dropdownCohorts">
-                        <div class="dropdown">
-                            <button class="dropbtn">Selecciona un cohort</button>
-                            <div class="dropdown-content">
-                                <a>Cohort 1</a>
-                                <a>Cohort 2</a>
-                                <a>Cohort 3</a>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="cohorts" class="dropdownCohorts">
+                            <div class="dropdown">
+                                <button class="dropbtn">Selecciona un cohort</button>
+                                <div class="dropdown-content">
+                                    <a>Cohort 1</a>
+                                    <a>Cohort 2</a>
+                                    <a>Cohort 3</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="contenidoTres">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 d-flex align-self-left">
-                    <div class="titulosSecciones">
-                        <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
+        <div id="contenidoTres">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 d-flex align-self-left">
+                        <div class="titulosSecciones">
+                            <i class="fa fa-user"></i>Listado alumnas
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
+                            <table class="tablaAlumnas">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
-                        <table class="tablaAlumnas">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- Link a JS -->
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
     <script src="indexnav.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
-
 </html>

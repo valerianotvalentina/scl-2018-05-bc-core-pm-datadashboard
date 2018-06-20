@@ -1,3 +1,11 @@
+body{
+    background-color: #F2F2F2;
+}
+#LogoLaboratoria{
+    margin-left:60px; 
+    margin-top:10px
+}
+
 .topnav {
     font-family: 'Open Sans', sans-serif;
     background-color: #FFE521;
@@ -166,6 +174,7 @@ td {
 .fa-users,
 .fa-user {
     padding-right: 15px;
+    font-size:25px;
 }
 
 
