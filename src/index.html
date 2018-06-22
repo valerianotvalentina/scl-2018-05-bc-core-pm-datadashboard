@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Data Dashboard</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="icon" href="../src/img/favicon.png" type="image/png" sizes="16x16">
     <!-- Bootstrap CDN-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
 </head>
 
 <body>
@@ -25,10 +25,10 @@
         <div class="topnav">
             <div id="main">
                 <span onclick="openNav()">
-                <svg class="elipse"></svg>
-                <i class="fa fa-bars"></i>
-            </span>
-                <img id="LogoLaboratoria" src="img/LogoLaboratoria.png" width="182px">
+                    <svg class="elipse"></svg>
+                    <i class="fa fa-bars"></i>
+                </span>
+                <img id="LogoLaboratoria" src="../src/img/LogoLaboratoria.png" width="182px">
             </div>
             <div id="topMenu" class="menuSuperior">
                 <a>Data Dashboard</a>
@@ -36,23 +36,24 @@
         </div>
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="sidenavText" href="#">Nombre Usuario</a>
-            <a class="sidenavText" href="#">Data Dashboard</a>
-            <a class="sidenavText" href="#">Configuración</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+            <a class="sidenavText" href="#"><i class="fa fa-user"></i> Nombre Usuario</a>
+            <a class="sidenavText" href="#"><i class="fas fa-table"></i> Data Dashboard</a>
+            <a class="sidenavText" href="#"><i class="fas fa-cog"></i> Configuración</a>
         </div>
-
     </header>
+
     <section>
         <div id="contenido">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4 d-flex align-self-left">
                         <div class="titulosSecciones">
-                            <i class="fa fa-map-marker"></i>Sedes
+                            <i class="fas fa-map-marker-alt"></i>Sedes
                         </div>
                     </div>
                 </div>
+                <hr class="lineaSeparadorUno">
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -60,13 +61,17 @@
                         <div id="cajaChile" class="cajasSedes mx-auto d-flex align-self-center">
                             <table>
                                 <tr>
-                                    <td><img src="img/chile.png" width="89px"></td>
+                                    <td>
+                                        <img src="../src/img/chile.png" width="89px">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Santiago de Chile</td>
                                 </tr>
                                 <tr>
-                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                    <td>
+                                        <button class="buttonSedes" type="button">Ingresar</button>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -75,13 +80,17 @@
                         <div id="cajaMexico" class="cajasSedes mx-auto d-flex align-self-center">
                             <table>
                                 <tr>
-                                    <td><img src="img/mexico.png" width="74px"></td>
+                                    <td>
+                                        <img src="../src/img/mexico.png" width="74px">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Ciudad de México</td>
                                 </tr>
                                 <tr>
-                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                    <td>
+                                        <button class="buttonSedes" type="button">Ingresar</button>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -90,13 +99,17 @@
                         <div id="cajaPeru" class="cajasSedes mx-auto d-flex align-self-center">
                             <table>
                                 <tr>
-                                    <td><img src="img/peru2.png" width="43px"></td>
+                                    <td>
+                                        <img src="../src/img/peru2.png" width="43px">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Lima Perú</td>
                                 </tr>
                                 <tr>
-                                    <td><button class="buttonSedes" type="button">Ingresar</button></td>
+                                    <td>
+                                        <button class="buttonSedes" type="button">Ingresar</button>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -113,20 +126,29 @@
                         </div>
                     </div>
                 </div>
+                <hr class="lineaSeparadorUno">
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div id="cohorts" class="dropdownCohorts">
-                            <div class="dropdown">
-                                <button class="dropbtn">Selecciona un cohort</button>
-                                <div class="dropdown-content">
-                                    <a>Cohort 1</a>
-                                    <a>Cohort 2</a>
-                                    <a>Cohort 3</a>
-                                </div>
-                            </div>
+                    <div class="col-sm-12 d-flex align-self-left">
+                        <div class="dropdown">
+                            <p>Selecciona un cohort</p>
+                            <select name="cohorts" id="Menu_dropdown">
+                <div>
+                    <option value="0">Seleccionar</option>
+                    <option value="lim-2018-03-pre-core-pw">Lim-2018-03 pre-core pw</option>
+                    <option value="STGO">Lim-2</option>
+                    <option value="MEXICO">Lim-3</option>
+                </div>
+                            </select>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-flex align-self-left">
+                        <button class="buttonCohorts" id="botoncito" onclick="jsonss()">Cargar listado</button>
                     </div>
                 </div>
             </div>
@@ -140,61 +162,38 @@
                         </div>
                     </div>
                 </div>
+                <hr class="lineaSeparadorUno">
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-12">
                         <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
-                            <table class="tablaAlumnas">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table id=tablaAlumnas class="table table-hover">
+                                    <thead class="cabeceraTabla">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>% Lecturas</th>
+                                            <th>% Ejercicios</th>
+                                            <th>% Cuestionarios</th>
+                                            <th>Puntaje Cuestionarios</th>
+                                            <th>% Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
- 
- 
- 
-    <footer>
- 
-    </footer>
- 
- 
- 
- 
- 
- 
-    <script src="indexnav.js"></script>
-    <script type="text/javascript" src="main.js"></script>
 </body>
+<footer>
+    <script src="../src/indexnav.js"></script>
+    <script src="../src/main.js"></script>
+    <script src="../src/data.js"></script>
+</footer>
 
 </html>

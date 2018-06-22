@@ -3,6 +3,7 @@ function openNav() {
     document.getElementById("contenido").style.marginLeft = "277px";
     document.getElementById("contenidoDos").style.marginLeft = "277px";
     document.getElementById("contenidoTres").style.marginLeft = "277px";
+    document.getElementById("Menu_dropdown").style.marginLeft = "277px";
 }
 
 function closeNav() {
@@ -10,4 +11,5 @@ function closeNav() {
     document.getElementById("contenido").style.marginLeft = "0";
     document.getElementById("contenidoDos").style.marginLeft = "0";
     document.getElementById("contenidoTres").style.marginLeft = "0";
+    document.getElementById("Menu_dropdown").style.marginLeft = "0";
 }

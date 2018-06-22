@@ -26,9 +26,9 @@ _ver_ y _usar_ la data de progreso del LMS. Para ello, proponemos crear un
 ## Introducción  
 
 El proceso de desarrollo del proyecto, lo llevamos a cabo después de algunas entrevistas a quienes usan Dashboard, principalmente a nuestro cliente directo, para entender un poco más de la experiencia del usuario. También buscamos referencias en diferentes sitios webs, como behance y pinterest donde algunos proyectos ya se habían llevado a cabo teniendo todo esto anterior en cuenta. 
-Nuestros principales usuarios del producto son aquellos que quieran mantenerse al día con el progreso que llevan las alumnas de laboratoria, específicamente en las tareas predispuestas del LMS, tales como: Lecturas, Quizzes y Ejercicios. Asi como tambien saber cuántas alumnas hay por cohort y por sede en su totalidad.
+Nuestros principales usuarios del producto son aquellos que quieran mantenerse al día con el progreso que llevan las alumnas de Laboratoria, específicamente en las tareas predispuestas del LMS, tales como: Lecturas, Quizzes y Ejercicios. Así como también saber cuántas alumnas hay por cohort y por sede en su totalidad.
 
-En base a la entrevista, descubrimos que nuestro cliente tenía bastante interés en ver cada alumna por separado y sus avances en general. Asi como también mantener actualizado automáticamente la información proporcionada por el dashboard y poder acceder a ella desde cualquier dispositivo. 
+En base a la entrevista, descubrimos que nuestro cliente tenía bastante interés en ver cada alumna por separado y sus avances en general. Además de mantener actualizada automáticamente la información proporcionada por el dashboard y poder acceder a ella desde cualquier dispositivo. 
 
 En base a esto, definimos el siguiente sketch:
  
