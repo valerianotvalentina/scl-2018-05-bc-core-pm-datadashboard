@@ -42,8 +42,9 @@ body {
 .menuSuperior {
     font-weight: 700;
     overflow: hidden;
-    padding: 28px 40px;
     font-size: 15px;
+    line-height: 80px;
+    padding-left: 30px;
 }
 
 .sidenav {
@@ -144,7 +145,7 @@ body {
     background-color: #FF009E;
     color: white;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .buttonSedes:hover {
@@ -195,16 +196,17 @@ hr {
     padding-right: 15px;
 }
 
-.fa-angle-down {
-    padding-left: 50px;
-}
-
 .fa-times {
     font-size: 20px;
 }
 
 .fa-times:hover {
     color: #E0E0E0;
+}
+
+.fa-search {
+    font-size: 15px;
+    align-self: center;
 }
 
 hr.lineaSeparadorUno {
@@ -225,6 +227,7 @@ hr.lineaSeparadorUno {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 8px 8px rgba(0, 0, 0, 0.12);
     color: #333333;
     font-size: 16px;
+    outline: none;
 }
 
 .dropdown p {
@@ -240,8 +243,8 @@ hr.lineaSeparadorUno {
     background-color: #FF009E;
     color: white;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 2px;
-    margin-top: 40px;
+    border-radius: 3px;
+    margin-top: 20px;
 }
 
 .buttonCohorts:hover {
@@ -252,11 +255,50 @@ hr.lineaSeparadorUno {
 /* Tabla */
 
 #tablaAlumnas {
-    margin-top: 30px;
+    margin-top: 5px;
     font-size: 13px;
 }
 
 .cabeceraTabla {
     background-color: white;
     text-transform: uppercase;
+}
+
+
+/* Buscador */
+
+.buscador {
+    margin-top: 30px;
+}
+
+.buscador input {
+    width: 250px;
+    height: 36px;
+    background: #E0E0E0;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.buscador input[type=text] {
+    padding: 6px;
+    font-size: 14px;
+    color: #828282;
+    border: none;
+}
+
+.buscador button {
+    width: 36px;
+    height: 36px;
+    background: #FF009E;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+.buscador button:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
 }
