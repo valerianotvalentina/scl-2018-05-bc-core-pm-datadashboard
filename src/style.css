@@ -219,6 +219,7 @@ hr.lineaSeparadorUno {
 /* dropdown */
 
 .dropdown select {
+    margin-right: 15px;
     border: none;
     position: relative;
     width: 250px;
@@ -255,7 +256,7 @@ hr.lineaSeparadorUno {
 /* Tabla */
 
 #tablaAlumnas {
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 13px;
 }
 

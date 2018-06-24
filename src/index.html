@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                     <svg class="elipse"></svg>
                     <i class="fa fa-bars"></i>
                 </span>
-                <img id="LogoLaboratoria" src="../src/img/LogoLaboratoria.png" width="182px">
+                <img id="LogoLaboratoria" src="img/LogoLaboratoria.png" width="182px">
             </div>
             <div id="topMenu" class="menuSuperior">
                 <a>Data Dashboard</a>
@@ -36,10 +36,15 @@
         </div>
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
-            <a class="sidenavText" href="#"><i class="fa fa-user"></i> Nombre Usuario</a>
-            <a class="sidenavText" href="#"><i class="fas fa-table"></i> Data Dashboard</a>
-            <a class="sidenavText" href="#"><i class="fas fa-cog"></i> Configuración</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a class="sidenavText" href="#">
+                <i class="fa fa-user"></i> Nombre Usuario</a>
+            <a class="sidenavText" href="#">
+                <i class="fas fa-table"></i> Data Dashboard</a>
+            <a class="sidenavText" href="#">
+                <i class="fas fa-cog"></i> Configuración</a>
         </div>
     </header>
 
@@ -62,7 +67,7 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="../src/img/chile.png" width="89px">
+                                        <img src="img/chile.png" width="89px">
                                     </td>
                                 </tr>
                                 <tr>
@@ -81,7 +86,7 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="../src/img/mexico.png" width="74px">
+                                        <img src="img/mexico.png" width="74px">
                                     </td>
                                 </tr>
                                 <tr>
@@ -100,7 +105,7 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="../src/img/peru2.png" width="43px">
+                                        <img src="img/peru2.png" width="43px">
                                     </td>
                                 </tr>
                                 <tr>
@@ -132,12 +137,15 @@
                 <div class="row">
                     <div class="col-sm-12 d-flex align-self-left">
                         <div class="dropdown">
-                            <p>Selecciona un cohort</p>
+                            <p>Selecciona un cohort:</p>
                             <select name="cohorts" id="Menu_dropdown">
-                    <option value="0">Seleccionar</option>
-                    <option value="lim-2018-03-pre-core-pw">Lim-2018-03 pre-core pw</option>
-                    <option value="STGO">Lim-2</option>
-                    <option value="MEXICO">Lim-3</option>
+ 
+                                <div>
+                                    <option value="0">Seleccionar</option>
+                                    <option value="lim-2018-03-pre-core-pw">Lim-2018-03 pre-core pw</option>
+                                    <option value="STGO">Lim-2</option>
+                                    <option value="MEXICO">Lim-3</option>
+                                </div>
                             </select>
                         </div>
                     </div>
@@ -146,7 +154,22 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 d-flex align-self-left">
-                        <button class="buttonCohorts" id="botoncito" onclick="jsonss()">Cargar listado</button>
+                        <div class="dropdown">
+                            <p>Ordenar por:</p>
+                            <div>
+                                <Select id="Order">
+                                    <option value="Nombre">Nombre</option>
+                                    <option value="Total">% Total</option>
+                                    <option value="Lecturas">% Lecturas</option>
+                                    <option value="Ejecicios">% Ejecicios</option>
+                                    <option value="Cuestionarios">% Cuestionarios</option>
+                                </Select>
+                                <select id="orderby">
+                                    <option value="ASC">Ascendente</option>
+                                    <option value="DESC">Descendente</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,7 +177,7 @@
         <div id="contenidoTres">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6 d-flex align-self-left">
+                    <div class="col-sm-4 d-flex align-self-left">
                         <div class="titulosSecciones">
                             <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
                         </div>
@@ -164,19 +187,23 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12 d-flex align-self-left">
                         <div class="buscador">
-                            <form action="">
-                                <input type="text" placeholder="Buscar por nombre de alumna" name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
+                            <input type="text" placeholder="Buscar por nombre de alumna" id="buscador" />
+                            <button type="submit" id="botoncito" onclick="jsonss()"><i class="fa fa-search"></i></button>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
                         <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
                             <div class="table-responsive">
                                 <table id=tablaAlumnas class="table table-hover">
                                     <thead class="cabeceraTabla">
                                         <tr>
-                                            <th>Nombre alumna</th>
+                                            <th>Nombre</th>
                                             <th>% Lecturas</th>
                                             <th>% Ejercicios</th>
                                             <th>% Cuestionarios</th>
@@ -195,9 +222,9 @@
         </div>
 </body>
 <footer>
-    <script src="../src/indexnav.js"></script>
-    <script src="../src/main.js"></script>
-    <script src="../src/data.js"></script>
+    <script src="indexnav.js"></script>
+    <script src="main.js"></script>
+    <script src="data.js"></script>
 </footer>
 
 </html>
