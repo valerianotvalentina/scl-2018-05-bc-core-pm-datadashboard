@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="col-sm-12 d-flex align-self-left">
                         <div class="dropdown">
-                            <p>Selecciona un cohort:</p>
+                            <p>Selecciona un cohort</p>
                             <select name="cohorts" id="Menu_dropdown">
  
                                 <div>
@@ -155,71 +155,75 @@
                 <div class="row">
                     <div class="col-sm-12 d-flex align-self-left">
                         <div class="dropdown">
-                            <p>Ordenar por:</p>
+                            <p>Ordenar mediante a :</p>
                             <div>
                                 <Select id="Order">
                                     <option value="Nombre">Nombre</option>
-                                    <option value="Total">% Total</option>
-                                    <option value="Lecturas">% Lecturas</option>
-                                    <option value="Ejecicios">% Ejecicios</option>
-                                    <option value="Cuestionarios">% Cuestionarios</option>
+                                    <option value="Total">Total %</option>
+                                    <option value="Lecturas">Lecturas %</option>
+                                    <option value="Ejecicios">Ejecicios %</option>
+                                    <option value="Cuestionarios">Cuestionarios %</option>
                                 </Select>
                                 <select id="orderby">
                                     <option value="ASC">Ascendente</option>
-                                    <option value="DESC">Descendente</option>
+                                    <option value="DESC">Desendente</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contenidoTres">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4 d-flex align-self-left">
-                        <div class="titulosSecciones">
-                            <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
-                        </div>
-                    </div>
-                </div>
-                <hr class="lineaSeparadorUno">
-            </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 d-flex align-self-left">
-                        <div class="buscador">
-                            <input type="text" placeholder="Buscar por nombre de alumna" id="buscador" />
-                            <button type="submit" id="botoncito" onclick="jsonss()"><i class="fa fa-search"></i></button>
+                        <div class="dropdown">
+                            <p>Buscar Nombre : </p>
+                            <input type="text" id="buscador" />
+
+                            <div>
+                                <button class="buttonCohorts" id="botoncito" onclick="jsonss()">Cargar</button>
+                            </div>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
-                            <div class="table-responsive">
-                                <table id=tablaAlumnas class="table table-hover">
-                                    <thead class="cabeceraTabla">
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>% Lecturas</th>
-                                            <th>% Ejercicios</th>
-                                            <th>% Cuestionarios</th>
-                                            <th>Puntaje Cuestionarios</th>
-                                            <th>% Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tbody">
-                                    </tbody>
-                                </table>
+            <div id="contenidoTres">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 d-flex align-self-left">
+                            <div class="titulosSecciones">
+                                <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="lineaSeparadorUno">
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
+                                <div class="table-responsive">
+                                    <table id=tablaAlumnas class="table table-hover">
+                                        <thead class="cabeceraTabla">
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>% Lecturas</th>
+                                                <th>% Ejercicios</th>
+                                                <th>% Cuestionarios</th>
+                                                <th>Puntaje Cuestionarios</th>
+                                                <th>% Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody">
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 </body>
 <footer>
     <script src="indexnav.js"></script>
