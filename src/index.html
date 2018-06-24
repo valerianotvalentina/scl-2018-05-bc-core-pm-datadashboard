@@ -134,12 +134,10 @@
                         <div class="dropdown">
                             <p>Selecciona un cohort</p>
                             <select name="cohorts" id="Menu_dropdown">
-                <div>
                     <option value="0">Seleccionar</option>
                     <option value="lim-2018-03-pre-core-pw">Lim-2018-03 pre-core pw</option>
                     <option value="STGO">Lim-2</option>
                     <option value="MEXICO">Lim-3</option>
-                </div>
                             </select>
                         </div>
                     </div>
@@ -156,7 +154,7 @@
         <div id="contenidoTres">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4 d-flex align-self-left">
+                    <div class="col-sm-6 d-flex align-self-left">
                         <div class="titulosSecciones">
                             <i class="fa fa-user" style="font-size:25px;"></i>Listado alumnas
                         </div>
@@ -167,12 +165,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+                        <div class="buscador">
+                            <form action="">
+                                <input type="text" placeholder="Buscar por nombre de alumna" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
                         <div id="cohorts" class="dropdownCohorts mx-auto d-flex align-self-center">
                             <div class="table-responsive">
                                 <table id=tablaAlumnas class="table table-hover">
                                     <thead class="cabeceraTabla">
                                         <tr>
-                                            <th>Nombre</th>
+                                            <th>Nombre alumna</th>
                                             <th>% Lecturas</th>
                                             <th>% Ejercicios</th>
                                             <th>% Cuestionarios</th>
