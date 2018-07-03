@@ -28,6 +28,25 @@ _ver_ y _usar_ la data de progreso del LMS. Para ello, proponemos crear un
 El proceso de desarrollo del proyecto, lo llevamos a cabo después de algunas entrevistas a quienes usan Dashboard, principalmente a nuestro cliente directo, para entender un poco más de la experiencia del usuario. También buscamos referencias en diferentes sitios webs, como behance y pinterest donde algunos proyectos ya se habían llevado a cabo teniendo todo esto anterior en cuenta. 
 Nuestros principales usuarios del producto son aquellos que quieran mantenerse al día con el progreso que llevan las alumnas de Laboratoria, específicamente en las tareas predispuestas del LMS, tales como: Lecturas, Quizzes y Ejercicios. Así como también saber cuántas alumnas hay por cohort y por sede en su totalidad.
 
+## Entrevista
+Algunas preguntas formuladas, fueron las siguientes:
+
+-¿Qué es lo que consideras más importante al entrar al Datadashboard?
+R: Ver a todas las alumnas con sus avances en general, Sedes y Cohorts.
+-¿ Cómo te gustaria ver esta información?
+R: En forma circular, de torta. 
+-¿Cada cuanto revisas normalmente los datos en el Datadashboard? ¿ Lo revisas desde cualquier parte?
+R: Todos los dias. Si, me gustaria revisarlo de cualquier dispositivo.
+- ¿En base a esto ultimo, quieres una actualizacion permanente del Datadashboard?
+R: Si, una actualizacion automatica.
+- ¿Te gustaria poder descargar la lista de alumnas en un excel, hacia tu correo?
+R: Si, seria interesante.
+- ¿Te gustaria ver un menú deslizante al costado del Datadasboard?
+R: Si, imaginen esto como parte del LMS que hay ahora, solo que el Dashboard es parte de ese menú.
+- ¿Te gustaria destacar alumnas segun tu criterio, para hacerles un seguimiento especial en el inicio del Datadashboard?
+R: Si, estaria bien.
+
+Resumen: 
 En base a la entrevista, descubrimos que nuestro cliente tenía bastante interés en ver cada alumna por separado y sus avances en general. Además de mantener actualizada automáticamente la información proporcionada por el dashboard y poder acceder a ella desde cualquier dispositivo. 
 
 En base a esto, definimos el siguiente sketch:
