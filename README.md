@@ -31,11 +31,11 @@ Nuestros principales usuarios del producto son aquellos que quieran mantenerse a
 ## Entrevista
 Algunas preguntas formuladas, fueron las siguientes:
 
--¿Qué es lo que consideras más importante al entrar al Datadashboard?
+- ¿Qué es lo que consideras más importante al entrar al Datadashboard?
 R: Ver a todas las alumnas con sus avances en general, Sedes y Cohorts.
--¿ Cómo te gustaria ver esta información?
+- ¿Cómo te gustaria ver esta información?
 R: En forma circular, de torta. 
--¿Cada cuanto revisas normalmente los datos en el Datadashboard? ¿ Lo revisas desde cualquier parte?
+- ¿Cada cuanto revisas normalmente los datos en el Datadashboard? ¿ Lo revisas desde cualquier parte?
 R: Todos los dias. Si, me gustaria revisarlo de cualquier dispositivo.
 - ¿En base a esto ultimo, quieres una actualizacion permanente del Datadashboard?
 R: Si, una actualizacion automatica.
